@@ -19,69 +19,73 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.txtInput = New System.Windows.Forms.TextBox()
-        Me.cmbMode = New System.Windows.Forms.ComboBox()
-        Me.lblOutput = New System.Windows.Forms.Label()
-        Me.btnConvert = New System.Windows.Forms.Button()
-        Me.btnCopy = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
-        '
-        'txtInput
-        '
-        Me.txtInput.Location = New System.Drawing.Point(12, 12)
-        Me.txtInput.Name = "txtInput"
-        Me.txtInput.Size = New System.Drawing.Size(260, 20)
-        Me.txtInput.TabIndex = 0
-        '
-        'cmbMode
-        '
-        Me.cmbMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbMode.FormattingEnabled = True
-        Me.cmbMode.Items.AddRange(New Object() {"Leet Speak", "Symbolic", "Reverse"})
-        Me.cmbMode.Location = New System.Drawing.Point(12, 38)
-        Me.cmbMode.Name = "cmbMode"
-        Me.cmbMode.Size = New System.Drawing.Size(121, 21)
-        Me.cmbMode.TabIndex = 1
-        '
-        'lblOutput
-        '
-        Me.lblOutput.AutoSize = True
-        Me.lblOutput.Location = New System.Drawing.Point(12, 68)
-        Me.lblOutput.Name = "lblOutput"
-        Me.lblOutput.Size = New System.Drawing.Size(50, 13)
-        Me.lblOutput.TabIndex = 2
-        Me.lblOutput.Text = "Output..."
-        '
-        'btnConvert
-        '
-        Me.btnConvert.Location = New System.Drawing.Point(139, 36)
-        Me.btnConvert.Name = "btnConvert"
-        Me.btnConvert.Size = New System.Drawing.Size(75, 23)
-        Me.btnConvert.TabIndex = 3
-        Me.btnConvert.Text = "Convert"
-        Me.btnConvert.UseVisualStyleBackColor = True
-        '
-        'btnCopy
-        '
-        Me.btnCopy.Location = New System.Drawing.Point(220, 63)
-        Me.btnCopy.Name = "btnCopy"
-        Me.btnCopy.Size = New System.Drawing.Size(52, 23)
-        Me.btnCopy.TabIndex = 4
-        Me.btnCopy.Text = "Copy"
-        Me.btnCopy.UseVisualStyleBackColor = True
-        '
-        'Form1
-        '
-        Me.ClientSize = New System.Drawing.Size(284, 100)
-        Me.Controls.Add(Me.btnCopy)
-        Me.Controls.Add(Me.btnConvert)
-        Me.Controls.Add(Me.lblOutput)
-        Me.Controls.Add(Me.cmbMode)
-        Me.Controls.Add(Me.txtInput)
-        Me.Name = "Form1"
-        Me.Text = "Funky Text"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        txtInput = New TextBox()
+        cmbMode = New ComboBox()
+        lblOutput = New Label()
+        btnConvert = New Button()
+        btnCopy = New Button()
+        SuspendLayout()
+        ' 
+        ' txtInput
+        ' 
+        txtInput.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        txtInput.Location = New Point(12, 12)
+        txtInput.Name = "txtInput"
+        txtInput.Size = New Size(260, 23)
+        txtInput.TabIndex = 0
+        ' 
+        ' cmbMode
+        ' 
+        cmbMode.DropDownStyle = ComboBoxStyle.DropDownList
+        cmbMode.FormattingEnabled = True
+        cmbMode.Items.AddRange(New Object() {"Leet Speak", "Symbolic", "Reverse"})
+        cmbMode.Location = New Point(12, 38)
+        cmbMode.Name = "cmbMode"
+        cmbMode.Size = New Size(121, 23)
+        cmbMode.TabIndex = 1
+        ' 
+        ' lblOutput
+        ' 
+        lblOutput.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        lblOutput.AutoSize = True
+        lblOutput.Font = New Font("Segoe UI", 12.0F)
+        lblOutput.Location = New Point(12, 68)
+        lblOutput.Name = "lblOutput"
+        lblOutput.Size = New Size(68, 21)
+        lblOutput.TabIndex = 2
+        lblOutput.Text = "Output..."
+        ' 
+        ' btnConvert
+        ' 
+        btnConvert.Location = New Point(139, 36)
+        btnConvert.Name = "btnConvert"
+        btnConvert.Size = New Size(75, 23)
+        btnConvert.TabIndex = 3
+        btnConvert.Text = "Convert"
+        btnConvert.UseVisualStyleBackColor = True
+        ' 
+        ' btnCopy
+        ' 
+        btnCopy.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        btnCopy.Location = New Point(220, 63)
+        btnCopy.Name = "btnCopy"
+        btnCopy.Size = New Size(52, 23)
+        btnCopy.TabIndex = 4
+        btnCopy.Text = "Copy"
+        btnCopy.UseVisualStyleBackColor = True
+        ' 
+        ' Form1
+        ' 
+        ClientSize = New Size(284, 100)
+        Controls.Add(btnCopy)
+        Controls.Add(btnConvert)
+        Controls.Add(lblOutput)
+        Controls.Add(cmbMode)
+        Controls.Add(txtInput)
+        Name = "Form1"
+        Text = "Funky Text"
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 
